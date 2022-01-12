@@ -1,0 +1,94 @@
+$primary: #404eed;
+
+
+html, body {
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.w-88 {
+  width: 88%;
+}
+
+.white {
+    color: white !important;
+}
+
+.header-style {
+  font-size: 14.5px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.img1-2 {
+  width: 2130px;
+  position: absolute;
+  top: 269px;
+}
+
+.Literally_Everything {
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+
+  &-First {
+    background-color: $primary;
+    background-image: url(../assets/Background1.svg);
+    background-position: center;
+    height: 626px;
+
+    &-Navbar {
+      height: 80px;
+      width: 1180px;
+      &-Button {
+        transition: box-shadow 0.3s !important;
+        &:hover {
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+            color: $primary !important
+        }
+      }
+    }
+    &-Background1 {
+      position: absolute;
+    }
+
+    &-Middle {
+      width: 1260px;
+      height: 518px;
+      margin-bottom: 32px;
+      background-color: azure;
+
+      &-stuff {
+        width: 780px;
+        height: 278px;
+        background-color: cadetblue;
+
+        &-Text {
+          text-align: center;
+
+          &-Big {
+            font-size: 56px;
+            font-family: monospace;
+            font-weight: 800;
+            text-rendering: geometricPrecision;
+            font-size: clamp(24px,5vw,65px);
+            line-height: 95%
+          }
+
+          &-Small {
+            line-height: 1.725;
+            font-size: 19px;
+            text-align: center;
+            font-weight: 250;
+            margin-top: 20px
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "~bootstrap/scss/bootstrap";
