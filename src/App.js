@@ -4,6 +4,7 @@ import { Container, Navbar, Button, Nav,  } from "react-bootstrap";
 import LogoNname from "./assets/LogoNname.svg"
 import Background2 from "./assets/Background2.svg"
 import Background3 from "./assets/Background3.svg"
+import DownloadIcon from '@mui/icons-material/Download';
 
 
 
@@ -32,14 +33,14 @@ const App = () => {
         </Navbar>
 
         <div className='Literally_Everything-First-Middle d-flex justify-content-center align-items-center'>
-          <div className='Literally_Everything-First-Middle-stuff'>
-            <div className='Literally_Everything-First-Middle-stuff-Text'>
+          <div className='Literally_Everything-First-Middle-stuff d-flex flex-column'>
+            <div className='Literally_Everything-First-Middle-stuff-Text text-align-center'>
               <div className='Literally_Everything-First-Middle-stuff-Text-Big white'>IMAGINE A PLACE...</div>
               <div className='Literally_Everything-First-Middle-stuff-Text-Small white'>...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</div>
             </div>
-
+   
             <div className='Literally_Everything-First-Middle-stuff-Buttons'>
-            <Button href="//discord.com/api/download?platform=osx" className='Literally_Everything-First-Middle-stuff-Buttons-Download' style={{"border-radius": "100px", "width": "251px", "height": "56px", "font-size": "20px", "fontWeight": "500"}} variant="light">Download for Mac</Button>
+            <Button href="//discord.com/api/download?platform=osx" className='Literally_Everything-First-Middle-stuff-Buttons-Download' style={{"border-radius": "100px", "width": "294px", "height": "56px", "font-size": "20px", "fontWeight": "500"}} variant="light"> {DownloadIcon} Download for Mac</Button>
             <Button className='Literally_Everything-First-Navbar-Button' style={{"border-radius": "100px", "width": "315px", "height": "56px", "font-size": "20px", "fontWeight": "500"}} variant="light">Open Discord in your browser</Button>
             </div>
 
@@ -56,3 +57,4 @@ const App = () => {
 };
 
 export default App;
+
