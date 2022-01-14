@@ -1,7 +1,9 @@
 $primary: #404eed;
+:root {
+  --font-headline: "Ginto Nord","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
 
-
-html, body {
+html,body {
   margin: 0;
   overflow-x: hidden;
   max-width: 100%;
@@ -12,7 +14,11 @@ html, body {
 }
 
 .white {
-    color: white !important;
+  color: white !important;
+}
+
+.black {
+  color: black !important;
 }
 
 .header-style {
@@ -32,7 +38,7 @@ html, body {
 .Literally_Everything {
   width: 100vw;
   height: 100vh;
-  background-color: aliceblue;
+  
 
   &-First {
     background-color: $primary;
@@ -43,11 +49,18 @@ html, body {
     &-Navbar {
       height: 80px;
       width: 1180px;
+
       &-Button {
         transition: box-shadow 0.3s !important;
+        border-radius: 100px !important;
+        width: 64px;
+        height: 38px;
+        font-size: 14px !important;
+        font-weight: 500 !important;
+
         &:hover {
-            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
-            color: $primary !important
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+          color: $primary !important;
         }
       }
     }
@@ -56,21 +69,20 @@ html, body {
     }
 
     &-Middle {
-      width: 1260px;
-      height: 518px;
+      width: 78%;
+      height: 82%;
       margin-bottom: 32px;
 
       &-stuff {
-        width: 757px;
-        height: 278px;
+        width: 60%;
+        text-align: -webkit-center;
 
         &-Text {
-
           &-Big {
             font-weight: 800;
             text-rendering: geometricPrecision;
-            font-size: clamp(24px,5vw,75px);
-            line-height: 95%
+            font-size: 70px;
+            line-height: 95%;
           }
 
           &-Small {
@@ -79,16 +91,45 @@ html, body {
             text-align: center;
             font-weight: 250;
             margin-top: 25px;
-            margin-bottom: 32px;
+            margin-bottom: 35px;
+            width: 80% !important;
           }
         }
 
         &-Buttons {
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
           gap: 31px;
+          z-index: 10000;
+
+          &-Download {
+            min-width: 251px ;
+            border-radius: 100px !important;
+            width: 251px;
+            height: 56px;
+            font-size: 19px !important;
+            font-weight: 400 !important;
+
+            &:hover {
+              box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4) !important;
+              color: $primary !important;
+            }
+
+          }
+
+          &-Open {
+            min-width: 315px;
+            border-radius: 100px !important;
+            width: 315px;
+            height: 56px;
+            font-size: 19px !important;
+            font-weight: 500 !important;
+            background-color: #23272A !important;
+            color: white !important;
+
+            &:hover {
+              box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4) !important;
+              opacity: 90%;
+            }
+          }
         }
       }
     }
