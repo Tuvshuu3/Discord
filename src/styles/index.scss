@@ -98,7 +98,7 @@ html,body {
 
         &-Buttons {
           gap: 31px;
-          z-index: 10000;
+          z-index: 10000; 
 
           &-Download {
             min-width: 251px ;
@@ -136,4 +136,23 @@ html,body {
   }
 }
 
+.carousel-stuff {
+  width: 100vw;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-control {
+  &-prev, &-next {
+    &-icon {
+      background-color: black !important;
+    }
+  }
+}
+
+.carousel-indicators {
+  background-color: black !important;
+}
 @import "~bootstrap/scss/bootstrap";

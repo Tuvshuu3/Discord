@@ -1,9 +1,12 @@
 import "./styles/index.scss";
 import "bootstrap/dist/css/bootstrap.min.css";          
-import { Container, Navbar, Button, Nav,  } from "react-bootstrap";
+import { Container, Navbar, Button, Nav, Carousel,  } from "react-bootstrap";
 import LogoNname from "./assets/LogoNname.svg"
 import Background2 from "./assets/Background2.svg"
 import Background3 from "./assets/Background3.svg"
+import Carousel1 from './assets/Carousel1.png'
+import Carousel2 from './assets/Carousel2.png'
+import Carousel3 from './assets/Carousel3.png'
 import 'material-icons/iconfont/material-icons.css';
 
 const App = () => {
@@ -14,7 +17,7 @@ const App = () => {
           <Container>
             <Navbar.Brand style={{'width': '140px', 'height': '46px'}} href="#home"><img src={LogoNname} /></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
+              <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto w-88 justify-content-center gap-4">
                 <Nav.Link className='white header-style'>Download</Nav.Link>
                 <Nav.Link className='white header-style'>Nitro</Nav.Link>
@@ -44,18 +47,51 @@ const App = () => {
             </Button>
             <Button className='Literally_Everything-First-Middle-stuff-Buttons-Open black' variant="dark">Open Discord in your browser</Button>
             </div>
-
           </div>
         </div>
         
-        <div className='img1-2 d-flex flex-row justify-content-between'>
+        {/* <div className='img1-2 d-flex flex-row justify-content-between'>
             <img src={Background2} className='Literally_Everything-First-Background2' width={700}/>
             <img src={Background3} className='Literally_Everything-First-Background3' width={610}/>
-        </div>
-        </div>
-    </div>
+        </div> */}
+      </div>
+
+      <div className="carousel-stuff">
+      <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Carousel1}
+      alt="First slide"
+    />
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Carousel2}
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Carousel3}
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+      </div>
+</div>
   );
 };
 
 export default App;
-
