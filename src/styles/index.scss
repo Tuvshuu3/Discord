@@ -1,13 +1,15 @@
 $primary: #404eed;
 :root {
-  --font-headline: "Ginto Nord","Whitney","Helvetica Neue","Helvetica","Arial",sans-serif;
+  --font-headline: "Ginto Nord", "Whitney", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
 }
 
 .color {
   background: $primary !important;
 }
 
-html,body {
+html,
+body {
   margin: 0;
   overflow-x: hidden;
   max-width: 100%;
@@ -48,6 +50,7 @@ html,body {
     background-image: url(../assets/Background1.svg);
     background-position: center;
     height: 626px;
+    position: relative;
 
     &-Navbar {
       height: 80px;
@@ -101,10 +104,10 @@ html,body {
 
         &-Buttons {
           gap: 31px;
-          z-index: 10000; 
+          z-index: 10000;
 
           &-Download {
-            min-width: 251px ;
+            min-width: 251px;
             border-radius: 100px !important;
             width: 251px;
             height: 56px;
@@ -115,7 +118,6 @@ html,body {
               box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4) !important;
               color: $primary !important;
             }
-
           }
 
           &-Open {
@@ -125,7 +127,7 @@ html,body {
             height: 56px;
             font-size: 19px !important;
             font-weight: 500 !important;
-            background-color: #23272A !important;
+            background-color: #23272a !important;
             color: white !important;
 
             &:hover {
@@ -137,12 +139,25 @@ html,body {
       }
     }
   }
+
+  &-loginBG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.greysh {
+  width: 784px;
+  height: 408px;
+  background-color: #36393f;
+  position: absolute;
 }
 
 .FooterContainer {
   width: 100%;
   height: 511px;
-  background-color: #23272A;
+  background-color: #23272a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +173,7 @@ html,body {
   &-TopPart {
     width: 1260px;
     height: 296px;
-    border-bottom: #5865f2 1px solid; 
+    border-bottom: #5865f2 1px solid;
     display: flex;
     flex-direction: row;
     gap: 80px;
@@ -192,7 +207,7 @@ html,body {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        
+
         &-title {
           color: #5865f2;
           font-size: 16px;
@@ -217,11 +232,11 @@ html,body {
     width: 100%;
     height: 71px;
     align-items: center;
-    
+
     &-Button {
-      min-width: 113px;
+      min-width: 117px;
       border-radius: 100px !important;
-      width: 113px;
+      width: 117px;
       height: 40px;
       font-size: 14px !important;
       font-weight: 500 !important;
@@ -231,12 +246,15 @@ html,body {
   }
 }
 
-.btn-secondary {
-  background-color: #23272A !important;
-  border-color: #23272A !important;
+.carouselImp {
+  width: 50% !important;
+  height: 50% !important;
 }
 
-
+.btn-secondary {
+  background-color: #23272a !important;
+  border-color: #23272a !important;
+}
 
 .carousel-stuff {
   width: 100vw;
@@ -247,7 +265,8 @@ html,body {
 }
 
 .carousel-control {
-  &-prev, &-next {
+  &-prev,
+  &-next {
     &-icon {
       background-color: black !important;
     }
@@ -256,5 +275,7 @@ html,body {
 
 .carousel-indicators {
   background-color: black !important;
+  bottom: -35px !important;
 }
+
 @import "~bootstrap/scss/bootstrap";
