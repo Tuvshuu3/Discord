@@ -144,6 +144,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('../assets/loginBG.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
@@ -151,7 +156,6 @@ body {
   width: 784px;
   height: 408px;
   background-color: #36393f;
-  position: absolute;
 
   &-inner {
     width: 100%;

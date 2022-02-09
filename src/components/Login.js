@@ -6,7 +6,6 @@ import QR from '../assets/QR.png'
 const Login = () => {
     return(
         <div className='Literally_Everything-loginBG'>
-            <img style={{width: '100vw', height: '100vh'}} src={loginBck}/>
             <div className='greysh'>
                 <div className="greysh-inner">
                     <div className="greysh-inner-2">
